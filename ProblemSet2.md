@@ -290,8 +290,9 @@ ssh username@tadpole.genomecenter.ucdavis.edu
 3. Navigate to the directory containing your P and Q matrices, and the mapfile you created. To run pong, simply use:
  ```
  module load pong
- pong -m filemap -i ind2_pop.txt
+ pong -m filemap -i ind2_pop.txt -p 4000
   ```
+Make sure to specify your correct port forwarding number
 
 4. You should see an output that looks like this
 

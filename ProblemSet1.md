@@ -244,14 +244,26 @@ List the number of SNPs excluded for all 5 groups tested separately: Sheko, Benc
 
 Why does the Hardy-Weinberg filter produce different results for pooled populations versus separate populations (~1 paragraph)? References to the actual HW equation are suggested / appropriate.
 
+```
+(Type answer here)
+```
+
 Use plink to query the allele frequency of rs12075 in each population using the
 `--snp` and another flag. For help, refer to  https://www.cog-genomics.org/plink/1.9/basic_stats#freq
 
 ### Question 15 [3 pts]
 What is the minor allele of rs12075 and what is its frequency in each population?
-```
-(Type your answer here)
-```
+
+Please fill your answers in the chart below:
+> Note: spacing isn't important for the chart to show up in markdown, only the lines and dashes
+
+| Pop     | Minor Allele (A1) | MAF     |
+|---------|-------------------|---------|
+|Bench    |                   |         |
+|Chabu    |                   |         |
+|Majang   |                   |         |
+|Shekkacho|                   |         |
+|Sheko    |                   |         |
 
 ### Question 16 [3pts]
  Calculate the expected heterozygosity of rs12075 for the Chabu using the allele frequencies obtained in Q15. Use the equation from lecture. Let’s assume that this heterozygosity is the starting H0 and the Ne for the Chabu is 1,000. What is the expected heterozygosity Ht in 5 generations? Hint: Check the lecture slides for Crow and Kimura eq 3.11.2 and show your work
@@ -268,10 +280,3 @@ What is the minor allele of rs12075 and what is its frequency in each population
  ```
 (Type your answer here)
  ```
-
-
- ## Example Question:
-
- Please attach your plot here
-
- ![admixtureplot](myplot.png)

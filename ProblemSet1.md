@@ -22,6 +22,8 @@ At the end of this exercise, you should be able to:
 PLINK is a piece of software that allows users to perform various data manipulation and analyses on genome-wide SNP data. Today we are going to focus on the former.
 
 A very useful online manual is available for PLINK here:
+http://zzz.bwh.harvard.edu/plink/dataman.shtml
+and/or
 https://www.cog-genomics.org/plink/1.9/general_usage
 
 #### Log on to the Genome Center cluster.

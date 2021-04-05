@@ -32,21 +32,21 @@ https://www.cog-genomics.org/plink/1.9/general_usage
 ssh yourUserName@tadpole.genomecenter.ucdavis.edu
 ```
 
-Then navigate to our CourseANT157L folder and into your `/students/yourname` directory
+Then navigate to our ant157 folder and into your `/students/yourname` directory
 
 You will be using PLINK software. In order to use this, you need to load the software module:
 
 ```
-module load plink2/1.90p
+module load plink/1.90p
 ```
 
 The command module load will load different types of software installed on the Genome Center cluster. You need to do this when starting each session.
 
 ### Question 1 [3 pts]
 
-Use `head` to explore the first line of the `Ethiopians_chr1.fam` file and the `Ethiopians_chr1.bim` file in the `/share/CourseANT157L/data/Ethiopians/` directory.
+Use `head` to explore the first line of the `Ethiopians_chr1.fam` file and the `Ethiopians_chr1.bim` file in the `/share/ant157/data/Ethiopians/` directory.
 
-What is the population and individual ID of the first individual in the .fam file?
+What is the population and individual ID of the first individual in the Ethiopians_chr1.fam file?
 ```
 (Type your answer here)
 ```
@@ -55,14 +55,15 @@ What is the physical position of the first SNP in the .bim file?
 ```
 (Type your answer here)
 ```
+Travel back to your student directory. 
 
 PLINK files can get very large, containing genotype information for hundreds of thousands of individuals at millions of SNPs, so we do not want to have to use less to view and manipulate the data. Instead we can use PLINK to read the file and tell us something about the structure of our data like so:
 
 ```
-plink --bfile /share/CourseANT157L/data/Ethiopians/Ethiopians_chr1 --freq
+plink --bfile /share/ant157/data/Ethiopians/Ethiopians_chr1 --freq
 ```
 
-The `--bfile` argument informs PLINK what dataset to look for, in this case `Ethiopians_chr1` (it will automatically look for `.bed`, `.bim` and `.fam` endings of the dataset). Running this command will print a summary of the contents of the input dataset to screen. It also prints a summary of the output dataset if any manipulations are performed (in this case, we used the `--freq` flag to calculate allele frequencies).
+The `--bfile` argument informs PLINK what dataset to look for, in this case `Ethiopians_chr1` (it will automatically look for `.bed`, `.bim` and `.fam` endings of the dataset). Running this command will print a summary of the contents of the input dataset to screen. It also prints a summary of the output dataset if any manipulations are performed (in this case, we used the `--freq` flag to calculate allele frequencies). But ALWAYS make sure you are only working in your own directory, and NOT the data directory.
 
 You can either copy the datafile to your own folder or continue to simply call the dataset from the /data/ folder.
 
@@ -172,7 +173,7 @@ Another common quality control measure is to filter for missingness. This allows
 
 ### Question 8 [1 pt]
 
-How many SNPs are left when you filter the data using a genotyping QC command specifying that a SNP can have at most 2% missing data?
+How many SNPs are left when you filter the original Ethiopians_chr1 data using a genotyping QC command specifying that a SNP can have at most 2% missing data?
 
 ```
 (Type your answer here)

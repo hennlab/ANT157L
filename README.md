@@ -1,4 +1,4 @@
-# ANT157L
+# ANT157L: Advanced Human Genetics Lab
 Location of homework assignments for ANT157L at UC Davis (Spring 2021)
 
 Course Objectives:
